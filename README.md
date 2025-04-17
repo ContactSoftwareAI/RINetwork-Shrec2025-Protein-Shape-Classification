@@ -9,7 +9,7 @@ https://shrec2025.drugdesign.fr/#envisioned-task
 https://3dor.cs.ucl.ac.uk/home
 
 
-Dataset size: 9,244 for training (with labels) + 2,321 for testing (unlabelled).
+Dataset size: 9,244 for training (with labels) + 2,321 for testing (unlabelled). Number of classes: 97.
 
 
 We split training set into 7,428/1,816 (approx. 80:20) as training/validation split.
