@@ -45,9 +45,9 @@ Recall: 0.8472,
 F1 Score: 0.8584
 
 
-Detailed description of the method is [here](https://github.com/ContactSoftwareAI/RINetwork-Shrec2025-Protein-Shape-Classification/blob/main/docu.pdf)
+Details on the method can found [here.](https://github.com/ContactSoftwareAI/RINetwork-Shrec2025-Protein-Shape-Classification/blob/main/docu.pdf)
 
 ## Acknowledgments:
-Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository](https://github.com/cszyzhang/riconv2)
+Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
 
-We thank authors for open-sourcing their code.
+We thank authors for open-sourcing their code. If you use this code, please consider citing them.
