@@ -1,6 +1,7 @@
 # Shrec2025ProteinClassification
 
 Code from [SHREC2025 Protein Classification Challenge](https://shrec2025.drugdesign.fr/#envisioned-task)
+
 (announced for [3DOR2025](https://3dor.cs.ucl.ac.uk/home))
 
 
@@ -12,7 +13,7 @@ We split training set into 7,428/1,816 (approx. 80:20) as training/validation sp
 
 For every vtk file we extract point cloud with 8192 points.
 
-Two models are trained/tested:
+Two [models](https://drive.contact.de/s/Og2eMpRHzzWsnu0) are trained/tested:
 + RUN 1: Geometry-only model (uses only point cloud as an input),
 + RUN 2: Geometry+Potential Model (point cloud + additional features for every point: potential and normal potential).
 
