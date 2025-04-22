@@ -1,0 +1,5 @@
+Pretrained models:
+
+Run 1: only geometric information (input B x 8192 x 6)
+
+Run 2: geometric and chemical information (input B x 8192 x 8)
