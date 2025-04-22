@@ -1,12 +1,7 @@
 # Shrec2025ProteinClassification
 
-Code from SHREC2025 Protein Classification challenge
-
-
-https://shrec2025.drugdesign.fr/#envisioned-task
-
-
-https://3dor.cs.ucl.ac.uk/home
+Code from [SHREC2025 Protein Classification Challenge](https://shrec2025.drugdesign.fr/#envisioned-task)
+(announced for [3DOR2025](https://3dor.cs.ucl.ac.uk/home))
 
 
 Dataset size: 9,244 for training (with labels) + 2,321 for testing (unlabelled). Number of classes: 97.
@@ -22,15 +17,15 @@ Two models are trained/tested:
 + RUN 2: Geometry+Potential Model (point cloud + additional features for every point: potential and normal potential).
 
 
-Validation accuracy:
-+ RUN 1: 92.93%
-+ RUN 2: 93.97%
+<!--Validation accuracy:-->
+<!--+ RUN 1: 92.93%-->
+<!--+ RUN 2: 93.97%-->
 
 
 
-Test accuracy:
-+ RUN 1: 91.90%
-+ RUN 2: 92.76%
+<!--Test accuracy:-->
+<!--+ RUN 1: 91.90%-->
+<!--+ RUN 2: 92.76%-->
 
 
 All statistics on test set:
