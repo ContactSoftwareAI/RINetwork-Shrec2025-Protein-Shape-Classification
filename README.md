@@ -43,7 +43,7 @@ Create your own environment and install dependencies via pip:
 ```
  pip install -r riconv_requirements.txt
 ```
-Train models with
+Train models with:
 ```
 # RUN 1:
  python train_classification_protein.py
@@ -51,7 +51,7 @@ Train models with
  python train_classification_protein_features2.py
 ```
 
-## Acknowledgments:
+## Acknowledgments
 Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
 
 We thank authors for open-sourcing their code. If you use this code, please consider citing them.
