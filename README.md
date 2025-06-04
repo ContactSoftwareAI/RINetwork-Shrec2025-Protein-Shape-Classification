@@ -5,6 +5,8 @@ Code from [SHREC2025 Protein Classification Challenge](https://shrec2025.drugdes
 (announced for [3DOR2025](https://3dor.cs.ucl.ac.uk/home))
 
 
+## Summary
+
 Dataset size: 9,244 for training (with labels) + 2,321 for testing (unlabelled). Number of classes: 97.
 
 
@@ -16,18 +18,6 @@ For every vtk file we extract point cloud with 8192 points.
 Two [models](https://drive.contact.de/s/X9eiUArRXTTX1pT) are trained/tested:
 + RUN 1: Geometry-only model (uses only point cloud as an input),
 + RUN 2: Geometry+Potential Model (point cloud + additional features for every point: potential and normal potential).
-
-
-<!--Validation accuracy:-->
-<!--+ RUN 1: 92.93%-->
-<!--+ RUN 2: 93.97%-->
-
-
-
-<!--Test accuracy:-->
-<!--+ RUN 1: 91.90%-->
-<!--+ RUN 2: 92.76%-->
-
 
 All statistics on test set:
 
@@ -46,6 +36,13 @@ F1 Score: 0.8584
 
 
 Details on the method can found [here.](https://github.com/ContactSoftwareAI/RINetwork-Shrec2025-Protein-Shape-Classification/blob/main/docu.pdf)
+
+
+### Running the code
+Create your own environment and install dependencies via pip:
+```
+ pip install -r riconv_requirements.txt
+```
 
 ## Acknowledgments:
 Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
