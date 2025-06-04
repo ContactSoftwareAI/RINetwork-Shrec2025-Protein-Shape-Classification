@@ -1,4 +1,4 @@
-name: pytorch3d
+name: riconv_env
 channels:
   - pytorch3d
   - pytorch
@@ -395,4 +395,3 @@ dependencies:
       - torch-kmeans==0.2.0
       - vgtk==0.0.1
       - werkzeug==3.0.3
-prefix: /home/tib/anaconda3/envs/pytorch3d
