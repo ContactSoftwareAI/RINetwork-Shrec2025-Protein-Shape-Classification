@@ -3,7 +3,7 @@
 Code from [SHREC2025 Protein Classification Challenge](https://shrec2025.drugdesign.fr/#envisioned-task) 
 (announced for [3DOR2025](https://3dor.cs.ucl.ac.uk/home))
 
-![#f03c15](News:) Preprint is [available](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5258950).
+**News:** Preprint is [available](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5258950).
 
 ## Summary
 
@@ -56,6 +56,7 @@ conda activate pytorch3d
 Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
 
 We thank authors for open-sourcing their code. If you use this code, please consider citing them.
+
 
 
 
