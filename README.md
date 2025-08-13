@@ -1,7 +1,6 @@
 # Shrec2025ProteinClassification
 
-Code from [SHREC2025 Protein Classification Challenge](https://shrec2025.drugdesign.fr/#envisioned-task)
-
+Code from [SHREC2025 Protein Classification Challenge](https://shrec2025.drugdesign.fr/#envisioned-task) 
 (announced for [3DOR2025](https://3dor.cs.ucl.ac.uk/home))
 
 
@@ -45,6 +44,7 @@ conda env create -f riconv_environment.yml
 ```
 Train models with:
 ```
+conda activate pytorch3d
 # RUN 1:
  python train_classification_protein.py
 # RUN 2:
@@ -55,4 +55,5 @@ Train models with:
 Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
 
 We thank authors for open-sourcing their code. If you use this code, please consider citing them.
+
 
