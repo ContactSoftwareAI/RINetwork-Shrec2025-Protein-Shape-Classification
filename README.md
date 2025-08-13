@@ -41,7 +41,7 @@ Details on the method can found [here.](https://github.com/ContactSoftwareAI/RIN
 ### Running the code
 Create your own environment and install dependencies via pip:
 ```
- pip install -r riconv_requirements.txt
+conda env create -f riconv_environment.yml
 ```
 Train models with:
 ```
@@ -55,3 +55,4 @@ Train models with:
 Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
 
 We thank authors for open-sourcing their code. If you use this code, please consider citing them.
+
