@@ -22,17 +22,17 @@ Two [models](https://drive.contact.de/s/X9eiUArRXTTX1pT) are trained/tested:
 All statistics on test set:
 
 RUN 1:
-Accuracy: 0.9190,
-Precision: 0.8065,
-Recall: 0.7825,
-F1 Score: 0.7859
+Accuracy: 91.90%,
+Precision: 80.65%,
+Recall: 78.25%,
+F1 Score: 78.59%.
 
 
 RUN 2:
-Accuracy: 0.9276,
-Precision: 0.8871,
-Recall: 0.8472,
-F1 Score: 0.8584
+Accuracy: 92.76%,
+Precision: 88.71%,
+Recall: 84.72%,
+F1 Score: 85.84%.
 
 
 Details on the method can found [here.](https://github.com/ContactSoftwareAI/RINetwork-Shrec2025-Protein-Shape-Classification/blob/main/docu.pdf)
@@ -52,10 +52,20 @@ conda activate pytorch3d
  python train_classification_protein_features2.py
 ```
 
+Test models (extract embeddings) with:
+```
+conda activate pytorch3d
+# RUN 1:
+ python test_classification_protein.py
+# RUN 2:
+ python test_classification_protein_features.py
+```
+
 ## Acknowledgments
 Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
 
 We thank authors for open-sourcing their code. If you use this code, please consider citing them.
+
 
 
 
