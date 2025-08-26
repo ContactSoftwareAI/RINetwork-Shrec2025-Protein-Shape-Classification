@@ -1,10 +1,3 @@
-"""
-Author: Zhiyuan Zhang
-Date: Dec 2021
-Email: cszyzhang@gmail.com
-Website: https://wwww.zhiyuanzhang.net
-"""
-
 import os
 import sys
 import pandas as pd
