@@ -38,31 +38,45 @@ F1 Score: 85.84%.
 Details on the method can found [here.](https://github.com/ContactSoftwareAI/RINetwork-Shrec2025-Protein-Shape-Classification/blob/main/docu.pdf)
 
 
-### Running the code
-Create your own environment and install dependencies via pip:
+## Running the code
+
+### How to reproduce results?
++ **Step 1:** Download preprocessed point cloud from test set from [here](https://drive.contact.de/s/2uYAC96R0PnIHUR).
+
++ **Step 2:** Download pretrained models in ```log``` folder from [here](https://drive.contact.de/s/X9eiUArRXTTX1pT) 
+
++ **Step 3:** Prepare environment
 ```
-conda env create -f riconv_environment.yml
-```
-Train models with:
-```
-conda activate pytorch3d
-# RUN 1:
- python train_classification_protein.py
-# RUN 2:
- python train_classification_protein_features2.py
+python3 -m venv .venv_gpu
+source .venv_gpu/bin/activate
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements_gpu.txt
 ```
 
-Test models (extract embeddings) with:
++ **Step 4:** Run scripts
 ```
-conda activate pytorch3d
+# activate environment
+source .venv_gpu/bin/activate
 # RUN 1:
  python test_classification_protein.py
 # RUN 2:
  python test_classification_protein_features.py
 ```
 
+
+### How to train a model?
+Train models with:
+```
+source .venv_gpu/bin/activate
+# RUN 1:
+ python train_classification_protein.py
+# RUN 2:
+ python train_classification_protein_features2.py
+```
+
+
 ### Download and prepare data
-Download [training set](https://shrec2025.drugdesign.fr/files/train_set.tar.xz) and [test set](https://shrec2025.drugdesign.fr/files/test_set.tar.xz).
+Download original (raw, unprocessed) [training set](https://shrec2025.drugdesign.fr/files/train_set.tar.xz) and [test set](https://shrec2025.drugdesign.fr/files/test_set.tar.xz).
 Extract point clouds from .vtk files with script ```extract_pc_from_vtk\convert_extract_features.py```
 
 
@@ -70,6 +84,7 @@ Extract point clouds from .vtk files with script ```extract_pc_from_vtk\convert_
 Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
 
 We thank authors for open-sourcing their code. If you use this code, please consider citing them.
+
 
 
 
