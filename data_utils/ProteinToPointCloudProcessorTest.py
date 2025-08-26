@@ -29,9 +29,11 @@ class DataProcessor(Dataset):
         for file in self.list_of_names:
             #train set
             if split == "train":
-                samples = np.loadtxt(self.root_path + self.pc_folder + file + "_pc.txt", delimiter=",").astype(np.float32)
+                #samples = np.loadtxt(self.root_path + self.pc_folder + file + "_pc.txt", delimiter=",").astype(np.float32)
+                samples=np.load(self.root_path + self.pc_folder + file + "_pc.npy").astype(np.float32)
             else:
-                samples=np.loadtxt(self.root_path + self.pc_folder + file[:-4] + "_pc.txt", delimiter=",").astype(np.float32)
+                #samples=np.loadtxt(self.root_path + self.pc_folder + file[:-4] + "_pc.txt", delimiter=",").astype(np.float32)
+                samples=np.load(self.root_path + self.pc_folder + file[:-4] + "_pc.npy").astype(np.float32)
 
 
             self.list_of_points.append(samples)
