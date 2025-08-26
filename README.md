@@ -7,27 +7,19 @@ Code from [SHREC2025 Protein Classification Challenge](https://shrec2025.drugdes
 
 ## Summary
 
-Dataset size: 9,244 for training (with labels) + 2,321 for testing (unlabelled). Number of classes: 97.
-
-
-We split training set into 7,428/1,816 (approx. 80:20) as training/validation split.
-
-
-For every vtk file we extract point cloud with 8192 points.
-
+Dataset size: 9,244 for training (with labels) + 2,321 for testing (unlabelled). Number of classes: 97.\
+We split training set into 7,428/1,816 (approx. 80:20) as training/validation split.\
+For every vtk file we extract point cloud with 8192 points. \
 Two [models](https://drive.contact.de/s/X9eiUArRXTTX1pT) are trained/tested:
 + RUN 1: Geometry-only model (uses only point cloud as an input),
 + RUN 2: Geometry+Potential Model (point cloud + additional features for every point: potential and normal potential).
 
-All statistics on test set:
-
+All statistics on test set: \
 RUN 1:
 Accuracy: 91.90%,
 Precision: 80.65%,
 Recall: 78.25%,
-F1 Score: 78.59%.
-
-
+F1 Score: 78.59%.\
 RUN 2:
 Accuracy: 92.76%,
 Precision: 88.71%,
@@ -41,7 +33,7 @@ Details on the method can found [here.](https://github.com/ContactSoftwareAI/RIN
 ## Running the code
 
 ### How to reproduce results?
-+ **Step 1:** Download preprocessed point cloud data from test set from [here](https://drive.contact.de/s/2uYAC96R0PnIHUR).
++ **Step 1:** Download preprocessed point cloud data from test set from [here](https://drive.contact.de/s/2uYAC96R0PnIHUR) in ```new_data``` folder.
 
 + **Step 2:** Download pretrained models in ```log``` folder from [here](https://drive.contact.de/s/X9eiUArRXTTX1pT). 
 
@@ -85,6 +77,7 @@ Extract point clouds from .vtk files with script ```extract_pc_from_vtk\convert_
 Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
 
 We thank authors for open-sourcing their code. If you use this code, please consider citing them.
+
 
 
 
