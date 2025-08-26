@@ -61,10 +61,16 @@ conda activate pytorch3d
  python test_classification_protein_features.py
 ```
 
+### Download and prepare data
+Download [training set](https://shrec2025.drugdesign.fr/files/train_set.tar.xz) and [test set](https://shrec2025.drugdesign.fr/files/test_set.tar.xz).
+Extract point clouds from .vtk files with script ```extract_pc_from_vtk\convert_extract_features.py```
+
+
 ## Acknowledgments
 Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
 
 We thank authors for open-sourcing their code. If you use this code, please consider citing them.
+
 
 
 
