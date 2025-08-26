@@ -33,7 +33,7 @@ Details on the method can found [here.](https://github.com/ContactSoftwareAI/RIN
 ## Running the code
 
 ### How to reproduce results?
-+ **Step 1:** Download preprocessed point cloud data from test set from [here](https://drive.contact.de/s/2uYAC96R0PnIHUR) in ```new_data``` folder.
++ **Step 1:** Download preprocessed point cloud data from test set in ```new_data``` folder from [here](https://drive.contact.de/s/2uYAC96R0PnIHUR).
 
 + **Step 2:** Download pretrained models in ```log``` folder from [here](https://drive.contact.de/s/X9eiUArRXTTX1pT). 
 
@@ -77,6 +77,7 @@ Extract point clouds from .vtk files with script ```extract_pc_from_vtk\convert_
 Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
 
 We thank authors for open-sourcing their code. If you use this code, please consider citing them.
+
 
 
 
