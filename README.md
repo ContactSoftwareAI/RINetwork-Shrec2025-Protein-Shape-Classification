@@ -3,7 +3,7 @@
 Code from [SHREC2025 Protein Classification Challenge](https://shrec2025.drugdesign.fr/#envisioned-task) 
 (announced for [3DOR2025](https://3dor.cs.ucl.ac.uk/home))
 
-**News:** Preprint is [available](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5258950).
+:tada: **News:** Preprint is [available](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5258950).
 
 ## Summary
 
@@ -43,9 +43,9 @@ Details on the method can found [here.](https://github.com/ContactSoftwareAI/RIN
 ### How to reproduce results?
 + **Step 1:** Download preprocessed point cloud from test set from [here](https://drive.contact.de/s/2uYAC96R0PnIHUR).
 
-+ **Step 2:** Download pretrained models in ```log``` folder from [here](https://drive.contact.de/s/X9eiUArRXTTX1pT) 
++ **Step 2:** Download pretrained models in ```log``` folder from [here](https://drive.contact.de/s/X9eiUArRXTTX1pT). 
 
-+ **Step 3:** Prepare environment
++ **Step 3:** Prepare environment:
 ```
 python3 -m venv .venv_gpu
 source .venv_gpu/bin/activate
@@ -53,7 +53,7 @@ python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements_gpu.txt
 ```
 
-+ **Step 4:** Run scripts
++ **Step 4:** Run scripts with:
 ```
 # activate environment
 source .venv_gpu/bin/activate
@@ -67,6 +67,7 @@ source .venv_gpu/bin/activate
 ### How to train a model?
 Train models with:
 ```
+# activate environment
 source .venv_gpu/bin/activate
 # RUN 1:
  python train_classification_protein.py
@@ -84,6 +85,7 @@ Extract point clouds from .vtk files with script ```extract_pc_from_vtk\convert_
 Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
 
 We thank authors for open-sourcing their code. If you use this code, please consider citing them.
+
 
 
 
