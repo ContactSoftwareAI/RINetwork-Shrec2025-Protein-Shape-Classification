@@ -121,7 +121,7 @@ def main(args):
 
     '''DATA LOADING'''
     log_string('Load dataset ...')
-    root_path = "./new_data/test_set_vtk/"
+    root_path = "./new_data/"
     data = pd.read_csv("./new_data/test_set_2.csv")
     filenames = data["anonymised_protein_id"]
 
