@@ -7,7 +7,7 @@ Code from [SHREC2025 Protein Classification Challenge](https://shrec2025.drugdes
 
 ## Summary
 
-Dataset size: 9,244 for training (with labels) + 2,321 for testing (unlabelled). Number of classes: 97.\
+Dataset size: 9,244 for training (with labels) + 2,311 for testing (unlabelled). Number of classes: 97.\
 We split training set into 7,428/1,816 (approx. 80:20) as training/validation split.\
 For every vtk file we extract point cloud with 8192 points. \
 Two [models](https://drive.contact.de/s/X9eiUArRXTTX1pT) are trained/tested:
@@ -77,6 +77,7 @@ Extract point clouds from .vtk files with script ```extract_pc_from_vtk\convert_
 Our code is build on top of the original [RIConv++ paper](https://arxiv.org/abs/2202.13094) and their [code repository.](https://github.com/cszyzhang/riconv2)
 
 We thank authors for open-sourcing their code. If you use this code, please consider citing them.
+
 
 
 
