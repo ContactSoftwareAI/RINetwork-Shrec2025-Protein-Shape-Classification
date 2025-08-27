@@ -31,7 +31,7 @@ ROOT_DIR = BASE_DIR
 sys.path.append(os.path.join(ROOT_DIR, 'models'))
 
 import yaml
-from easydict import EasyDict
+#from easydict import EasyDict
 import pandas as pd
 
 
